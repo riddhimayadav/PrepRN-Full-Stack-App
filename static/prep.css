@@ -1,0 +1,153 @@
+/* Re-use same green as Eat Out */
+:root {
+  --primary-green: #ACB288;
+}
+
+/* Wrapper & Title */
+.eatin-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #fafafa;
+}
+.eatin-wrapper h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form Layout */
+.eatin-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Each input group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-group label {
+  background: var(--primary-green);
+  color: white;
+  padding: 0.8rem;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.input-group input,
+.input-group select {
+  font-family: inherit;
+  color: #333;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0 0 10px 10px;
+  font-size: 1rem;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Fieldset (diet checkboxes) */
+fieldset {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+legend {
+  font-weight: 600;
+  padding: 0 0.5rem;
+  color: var(--primary-green);
+}
+fieldset label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: normal;
+}
+
+/* Submit Button */
+.eatin-form button {
+  background: var(--primary-green);
+  color: white;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.eatin-form button:hover {
+  background: #959e70;
+}
+
+/* Loading message */
+#loading-msg {
+  display: none;
+  text-align: center;
+  margin: 1rem 0;
+}
+#loading-msg p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Results styling (reuse your existing cards) */
+#recommendations h3 {
+  color: var(--primary-green);
+  margin-top: 2rem;
+}
+
+#recommendations > ul {
+  list-style: none;
+  padding: 0;
+}
+#recommendations > ul li {
+  background: white;
+  border-left: 4px solid var(--primary-green);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#recommendations > ul li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#recommendations > ul li a {
+  color: var(--primary-green);
+}
+
+/* Store list styling */
+ul.store-list {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  list-style: none;
+}
+ul.store-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ul.store-list li:before {
+  content: "🛒";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+}
+ul.store-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,24 @@
+# PrepRN Environment Variables
+# Copy this file to .env and fill in your actual API keys
+
+# Flask Configuration
+SECRET_KEY=your_secret_key_here
+FLASK_ENV=development
+FLASK_DEBUG=True
+
+# API Keys
+YELP_KEY=your_yelp_fusion_api_key_here
+SPOON_API_KEY=your_spoonacular_api_key_here
+GOOGLE_API_KEY=your_google_ai_studio_api_key_here
+
+# Alternative naming (your code uses both)
+YELP_API_KEY=your_yelp_fusion_api_key_here
+GENAI_KEY=your_google_ai_studio_api_key_here
+
+# Database Configuration
+DATABASE_URL=sqlite:///preprn.db
+
+# Optional: Production settings
+# DATABASE_URL=postgresql://user:password@localhost/preprn_prod
+# FLASK_ENV=production
+# FLASK_DEBUG=False
