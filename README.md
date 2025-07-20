@@ -1,6 +1,6 @@
 # 🍽️ PrepRN - AI-Powered Meal Planning Platform
 
-> **Full-stack web application that revolutionizes meal planning through intelligent restaurant discovery and AI-powered recipe recommendations**
+> **Full-stack web application that revolutionizes meal planning through intelligent restaurant discovery and AI-powered recipe recommendations.**
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.3.2-green.svg)](https://flask.palletsprojects.com/)
@@ -161,16 +161,19 @@ PrepRN isn't just another food planning app—it's a **sophisticated full-stack 
 ## 📱 **Application Screenshots**
 
 ### Dashboard - Clean, Professional Interface
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](static/screenshots/dashboard.png)
 
 ### Restaurant Discovery - Real-time API Integration
-![Restaurant Search](screenshots/restaurant-search.png)
+![Restaurant Search](static/screenshots/restaurant-search.png)
+![Restaurant Results](static/screenshots/restaurant-results.png)
 
 ### Meal Planning - AI-Powered Recommendations
-![Meal Planning](screenshots/meal-planning.png)
+![Meal Planning Search](static/screenshots/meal-planning-search.png)
+![Meal Planning Results](static/screenshots/meal-planning-results.png)
 
 ### Saved Recommendations - Persistent User Data
-![Saved Recommendations](screenshots/saved-recommendations.png)
+![Saved Recommendations - Eat Out](static/screenshots/saved-recommendations-res.png)
+![Saved Recommendations - Eat In](static/screenshots/saved-recommendations-meals.png)
 
 ---
 
